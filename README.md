@@ -26,7 +26,7 @@ S3 Raw Data (CSV)
    • Data cleansing & transformations
        ↓
 🥇 GOLD LAYER (gold_catalog.retail_gold)
-    • dim_customers (SCD Type 2)
+   • dim_customers (SCD Type 2)
    • dim_products, dim_stores (CDC)
    • fact_sales (Star Schema)
    • Analytics-ready datasets
@@ -82,7 +82,8 @@ Execute notebooks in this order:
 
 ### Workflow Details
 
-**Bronze Layer**: Load raw CSV files from S3 into Delta tables
+**Bronze Layer**: 
+* Load raw CSV files from S3 into Delta tables
 
 **Silver Layer**: 
 * Apply data cleansing and standardization
@@ -148,3 +149,4 @@ Tracks historical changes with `StartDate`, `EndDate`, `IsActive` columns
 ---
 
 **Last Updated**: 08 May 2026
+By Virendra
